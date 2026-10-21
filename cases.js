@@ -7,9 +7,10 @@ const escapeText = (value) => String(value ?? "");
 if (cases.length) {
   empty.hidden = true;
   grid.hidden = false;
-  cases.forEach((item) => {
+  cases.forEach((item, index) => {
     const article = document.createElement("article");
     article.className = "case-card";
+    if (index === 0) article.classList.add("is-featured");
     if (item.image) {
       const figure = document.createElement("figure");
       figure.className = "case-image";

@@ -5,17 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="新潟県の建設・不動産会社向け。毎週の手作業にかかる時間と金額を60秒で見える化します。">
   <meta property="og:title" content="にいがた仕事改善室｜60秒・手作業コストチェック">
-  <meta property="og:description" content="現場はそのまま。事務を、ひとつ軽く。">
+  <meta property="og:description" content="今ある仕組みを活かして、毎日の仕事を、ひとつ軽く。">
   <meta property="og:type" content="website">
   <title>にいがた仕事改善室｜60秒・手作業コストチェック</title>
-  <link rel="stylesheet" href="/styles.css?v=3">
-  <script src="/site.config.js?v=3"></script>
-  <script type="module" src="/app.js?v=3"></script>
+  <link rel="stylesheet" href="/styles.css?v=4">
+  <script src="/site.config.js?v=4"></script>
+  <script type="module" src="/app.js?v=4"></script>
 </head>
 <body>
   <div class="stay-banner">
     <span class="stay-dot" aria-hidden="true"></span>
-    新潟滞在プロジェクト実施中
+    担当者が新潟県内のプロジェクトに参画中
     <strong><span data-config="supportDeadline">2027年1月31日</span>まで県内訪問に対応</strong>
   </div>
 
@@ -26,6 +26,7 @@
     </a>
     <nav class="header-nav" aria-label="メインナビゲーション">
       <a href="/cases.html">事例・AI活用例</a>
+      <a href="#support">相談について</a>
       <a class="header-link" href="#diagnosis">60秒でチェック</a>
     </nav>
   </header>
@@ -33,17 +34,17 @@
   <main id="top">
     <section class="hero">
       <div class="hero-copy">
-        <p class="eyebrow">新潟の現場仕事に合わせた、60秒チェック</p>
-        <h1>現場はそのまま。<br>事務を、<em>ひとつ軽く。</em></h1>
-        <p class="hero-lead">見積・積算、工事写真、日報、物件問い合わせ。毎週くり返している手作業の「時間」と「金額」を見える化します。</p>
+        <p class="eyebrow">Wonder Japan Studioが新潟県内で伴走</p>
+        <h1>今ある仕組みを活かして、<span class="hero-break">毎日の仕事を、<em>ひとつ軽く。</em></span></h1>
+        <p class="hero-lead">建設・不動産会社の見積、工事写真、日報、問い合わせ対応を一緒に整理し、AIや既存ツールで小さく改善します。まずは毎週の手作業を「時間」と「金額」で見える化できます。</p>
         <div class="hero-actions">
           <a class="button button-primary" href="#diagnosis">手作業コストを確認する <span>→</span></a>
-          <span>登録不要で結果を表示</span>
+          <a class="button button-outline" href="mailto:studio.wonder.japan@gmail.com">診断せずに相談する</a>
         </div>
         <ul class="trust-list" aria-label="サービスの特徴">
-          <li>計算式をすべて公開</li>
+          <li>登録不要で結果を表示</li>
+          <li>初回15分相談は無料</li>
           <li>紙・FAXを残したままでも相談可能</li>
-          <li>営業電話なし</li>
         </ul>
       </div>
       <div class="hero-visual" aria-label="現場と事務をつなぐイメージ">
@@ -102,7 +103,7 @@
           </div>
 
           <label class="range-field" for="employees">
-            <span>従業員数 <strong><output id="employees-output">12</output>人</strong></span>
+            <span>その業務に関わる人数 <strong><output id="employees-output">12</output>人</strong></span>
             <input id="employees" name="employees" type="range" min="1" max="100" value="12">
           </label>
           <label class="range-field" for="weekly-hours">
@@ -119,7 +120,7 @@
 
         <aside class="formula-card">
           <span>計算方法</span>
-          <p>従業員数 × 1人あたりの週作業時間 × 48週 × 時給</p>
+          <p>その業務に関わる人数 × 1人あたりの週作業時間 × 48週 × 時給</p>
           <small>「削減できる金額」ではなく、現在手作業に使っているコストを表示します。</small>
         </aside>
       </div>
@@ -128,7 +129,7 @@
     <section class="result-section" id="result" hidden aria-labelledby="result-title" aria-live="polite">
       <div class="result-inner">
         <p class="eyebrow">チェック結果</p>
-        <h2 id="result-title">御社では、年間約<span id="annual-hours">2,304</span>時間が<br>対象業務に使われています</h2>
+        <h2 id="result-title">御社では、年間約<span class="nowrap"><span id="annual-hours">2,304</span>時間</span>が<br class="desktop-break">対象業務に使われています</h2>
         <div class="result-grid">
           <div class="metric"><span>年間の手作業コスト</span><strong>約<span id="annual-cost">415</span>万円</strong></div>
           <div class="metric"><span>30%を効率化できた場合</span><strong>約<span id="potential-cost">124</span>万円相当</strong></div>
@@ -184,21 +185,41 @@
             <label class="consent"><input id="privacy-accepted" type="checkbox" required> <span><a href="/privacy.html" target="_blank">プライバシーポリシー</a>に同意してレポートを受け取る</span></label>
             <button class="button button-primary button-full" type="submit">改善アイデア3つを受け取る <span>→</span></button>
             <p class="form-note">営業電話はありません。入力情報はレポート送付と、ご希望の相談対応にのみ使用します。</p>
+            <p class="form-note">レポートは送信完了後、通常数分以内にメールで届きます。</p>
             <p id="form-message" class="form-message" role="status"></p>
           </form>
         </div>
       </div>
     </section>
 
-    <section class="stay-section" aria-labelledby="stay-heading">
+    <section class="stay-section" id="support" aria-labelledby="stay-heading">
       <div>
         <p class="eyebrow">期間限定の県内サポート</p>
-        <h2 id="stay-heading"><span data-config="supportDeadline">2027年1月31日</span>まで、<br>新潟県内で直接お話しできます</h2>
+        <h2 id="stay-heading">新潟にいる今、<br class="desktop-break">現場で一緒に整理できます</h2>
       </div>
       <div class="stay-copy">
-        <p>チェックだけで終わらず、実際の見積書、日報、請求業務などを見ながら、最初に改善する1業務を一緒に整理します。</p>
-        <p>訪問またはオンラインで対応します。無理にシステム導入を勧めることはありません。</p>
-        <a class="button button-light booking-link" href="#diagnosis">まず60秒チェックから始める <span>→</span></a>
+        <p>担当者が新潟県内のプロジェクトに参画し、<span data-config="supportDeadline">2027年1月31日</span>まで県内に滞在しているため、この期間は訪問して実際の見積書や日報を見ながら相談できます。</p>
+        <p>期間限定なのは県内訪問です。滞在終了後も、オンラインでの相談や実装支援は継続します。</p>
+        <dl class="support-facts">
+          <div><dt>初回相談</dt><dd>15分・無料</dd></div>
+          <div><dt>改善レポート</dt><dd>通常数分以内</dd></div>
+          <div><dt>訪問・実装支援</dt><dd>内容確認後に個別見積</dd></div>
+        </dl>
+        <div class="support-actions">
+          <a class="button button-light booking-link" href="mailto:studio.wonder.japan@gmail.com">15分相談を申し込む <span>→</span></a>
+          <a class="support-email" href="mailto:studio.wonder.japan@gmail.com">studio.wonder.japan@gmail.com</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="operator-section" aria-labelledby="operator-heading">
+      <div>
+        <p class="eyebrow">運営について</p>
+        <h2 id="operator-heading">Wonder Japan Studio</h2>
+      </div>
+      <div>
+        <p>地域事業のプロデュース、市場予測モデル、AIプロダクト開発など、構想づくりから実装まで幅広く支援しています。公開できない案件もあるため、掲載許可を得た実績を事例ページで紹介しています。</p>
+        <a href="/cases.html">支援実績を見る →</a>
       </div>
     </section>
 
@@ -206,8 +227,8 @@
       <div class="section-heading"><p class="eyebrow">相談までの流れ</p><h2 id="process-heading">数字と改善可能性を見てから、相談するか決められます</h2></div>
       <ol>
         <li><span>01</span><strong>60秒チェック</strong><p>手作業の時間とコストを、その場で確認します。</p></li>
-        <li><span>02</span><strong>可能性レポート</strong><p>改善アイデア3つと最初の一手をメールで受け取ります。</p></li>
-        <li><span>03</span><strong>15分相談</strong><p>必要な場合だけ、訪問またはオンラインで整理します。</p></li>
+        <li><span>02</span><strong>可能性レポート</strong><p>改善アイデア3つと最初の一手を、通常数分以内にメールで受け取ります。</p></li>
+        <li><span>03</span><strong>15分無料相談</strong><p>診断を使わず、メールから直接相談することもできます。</p></li>
       </ol>
     </section>
   </main>

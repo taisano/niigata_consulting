@@ -17,10 +17,7 @@ window.CASE_STUDIES = [
     challenge: "欧州市場で、日本食の新しい選択肢となる店舗事業を立ち上げ",
     action: "店舗の初期事業をプロデュース",
     result: "店舗コンセプトと事業立ち上げを支援",
-    note: "守秘義務のため、社名・地域・詳細は非公開",
-    image: "/assets/vegan-ramen-concept.jpeg",
-    imageAlt: "欧州のヴィーガンラーメン店舗のイメージ",
-    imageCaption: "店舗イメージ（生成画像）"
+    note: "守秘義務のため、社名・地域・詳細は非公開"
   },
   {
     published: true,

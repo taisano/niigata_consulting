@@ -76,6 +76,7 @@ export default async function handler(request, response) {
       body: JSON.stringify({
         from,
         to: [email],
+        reply_to: owner || undefined,
         subject: `【にいがた仕事改善室】${companyName}様の業務改善可能性レポート`,
         html: reportEmail(report, lead, deadline)
       })
