@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="新潟県の建設・不動産会社向け。毎週の手作業にかかる時間と金額を60秒で見える化します。">
+  <meta property="og:title" content="にいがた仕事改善室｜60秒・手作業コストチェック">
+  <meta property="og:description" content="現場はそのまま。事務を、ひとつ軽く。">
+  <meta property="og:type" content="website">
+  <title>にいがた仕事改善室｜60秒・手作業コストチェック</title>
+  <link rel="stylesheet" href="/styles.css?v=3">
+  <script src="/site.config.js?v=3"></script>
+  <script type="module" src="/app.js?v=3"></script>
+</head>
+<body>
+  <div class="stay-banner">
+    <span class="stay-dot" aria-hidden="true"></span>
+    新潟滞在プロジェクト実施中
+    <strong><span data-config="supportDeadline">2027年1月31日</span>まで県内訪問に対応</strong>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="にいがた仕事改善室 ホーム">
+      <span class="brand-mark">新</span>
+      <span>にいがた仕事改善室<small>建設・不動産会社向け</small></span>
+    </a>
+    <nav class="header-nav" aria-label="メインナビゲーション">
+      <a href="/cases.html">事例・AI活用例</a>
+      <a class="header-link" href="#diagnosis">60秒でチェック</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">新潟の現場仕事に合わせた、60秒チェック</p>
+        <h1>現場はそのまま。<br>事務を、<em>ひとつ軽く。</em></h1>
+        <p class="hero-lead">見積・積算、工事写真、日報、物件問い合わせ。毎週くり返している手作業の「時間」と「金額」を見える化します。</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#diagnosis">手作業コストを確認する <span>→</span></a>
+          <span>登録不要で結果を表示</span>
+        </div>
+        <ul class="trust-list" aria-label="サービスの特徴">
+          <li>計算式をすべて公開</li>
+          <li>紙・FAXを残したままでも相談可能</li>
+          <li>営業電話なし</li>
+        </ul>
+      </div>
+      <div class="hero-visual" aria-label="現場と事務をつなぐイメージ">
+        <div class="visual-card visual-field">
+          <span class="visual-label">現場</span>
+          <strong>音声・写真・メモ</strong>
+          <small>いつもの方法で記録</small>
+        </div>
+        <div class="visual-route"><span></span><b>1つにつなぐ</b><span></span></div>
+        <div class="visual-card visual-office">
+          <span class="visual-label">事務所</span>
+          <strong>日報・見積・請求</strong>
+          <small>転記と探す時間を減らす</small>
+        </div>
+        <div class="snow-lines" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section class="local-reasons" aria-labelledby="local-heading">
+      <div class="section-heading">
+        <p class="eyebrow">全国向けツールを、そのまま持ち込まない</p>
+        <h2 id="local-heading">新潟の仕事の進め方から考えます</h2>
+      </div>
+      <div class="reason-grid">
+        <article><span>01</span><h3>建設・不動産の実務から</h3><p>見積、日報、工事写真、物件対応など、実際の業務を起点に改善候補を出します。</p></article>
+        <article><span>02</span><h3>冬季と現場移動も含める</h3><p>雪の影響や現場間の移動、帰社後の事務作業など、会社ごとの条件を確認します。</p></article>
+        <article><span>03</span><h3>小さく試してから決める</h3><p>全部を入れ替えず、1業務・1現場から。今ある紙やFAXとの併用も前提にします。</p></article>
+      </div>
+    </section>
+
+    <section class="diagnosis-section" id="diagnosis" aria-labelledby="diagnosis-title">
+      <div class="section-heading diagnosis-heading">
+        <p class="eyebrow">60秒・手作業コストチェック</p>
+        <h2 id="diagnosis-title">まず、今の手作業を数字にします</h2>
+        <p>年間48週として概算します。結果はその場ですぐ確認できます。</p>
+      </div>
+
+      <div class="diagnosis-shell">
+        <form id="diagnosis-form" class="diagnosis-form">
+          <div class="field-group">
+            <span class="field-label">業種</span>
+            <div class="choice-row" role="group" aria-label="業種">
+              <button class="choice is-selected" type="button" data-field="industry" data-value="construction" aria-pressed="true">建設業</button>
+              <button class="choice" type="button" data-field="industry" data-value="realestate" aria-pressed="false">不動産業</button>
+            </div>
+          </div>
+
+          <div class="field-group">
+            <span class="field-label">いちばん時間がかかる業務</span>
+            <div class="task-grid" role="group" aria-label="対象業務">
+              <button class="task-choice" type="button" data-field="workType" data-value="estimate" aria-pressed="false"><span>見積・積算</span><small>過去案件の検索、転記</small></button>
+              <button class="task-choice is-selected" type="button" data-field="workType" data-value="daily" aria-pressed="true"><span>日報・工事写真</span><small>帰社後の作成、整理</small></button>
+              <button class="task-choice" type="button" data-field="workType" data-value="invoice" aria-pressed="false"><span>請求・入金確認</span><small>二重入力、照合作業</small></button>
+              <button class="task-choice" type="button" data-field="workType" data-value="inquiry" aria-pressed="false"><span>物件・問い合わせ</span><small>返信、内見、修繕受付</small></button>
+            </div>
+          </div>
+
+          <label class="range-field" for="employees">
+            <span>従業員数 <strong><output id="employees-output">12</output>人</strong></span>
+            <input id="employees" name="employees" type="range" min="1" max="100" value="12">
+          </label>
+          <label class="range-field" for="weekly-hours">
+            <span>1人あたりの手作業 <strong>週 <output id="hours-output">4</output>時間</strong></span>
+            <input id="weekly-hours" name="weeklyHours" type="range" min="0.5" max="20" step="0.5" value="4">
+          </label>
+          <label class="range-field" for="hourly-wage">
+            <span>時給の目安 <strong><output id="wage-output">1,800</output>円</strong></span>
+            <input id="hourly-wage" name="hourlyWage" type="range" min="1000" max="5000" step="100" value="1800">
+          </label>
+
+          <button class="button button-primary button-full" type="submit">手作業コストを見る <span>→</span></button>
+        </form>
+
+        <aside class="formula-card">
+          <span>計算方法</span>
+          <p>従業員数 × 1人あたりの週作業時間 × 48週 × 時給</p>
+          <small>「削減できる金額」ではなく、現在手作業に使っているコストを表示します。</small>
+        </aside>
+      </div>
+    </section>
+
+    <section class="result-section" id="result" hidden aria-labelledby="result-title" aria-live="polite">
+      <div class="result-inner">
+        <p class="eyebrow">チェック結果</p>
+        <h2 id="result-title">御社では、年間約<span id="annual-hours">2,304</span>時間が<br>対象業務に使われています</h2>
+        <div class="result-grid">
+          <div class="metric"><span>年間の手作業コスト</span><strong>約<span id="annual-cost">415</span>万円</strong></div>
+          <div class="metric"><span>30%を効率化できた場合</span><strong>約<span id="potential-cost">124</span>万円相当</strong></div>
+        </div>
+        <p class="result-formula" id="result-formula">12人 × 週4時間 × 48週 × 1,800円</p>
+        <div class="first-step">
+          <span>最初の一手</span>
+          <strong id="first-step-text">音声入力による日報作成を、1現場だけで2週間試す</strong>
+        </div>
+
+        <div class="email-gate">
+          <div>
+            <p class="eyebrow">御社向けの改善可能性レポート</p>
+            <h3>現在の課題に合いそうな、改善アイデア3つをメールでお送りします</h3>
+            <ul>
+              <li>業種・現在の課題に合わせた改善候補</li>
+              <li>削減効果の試算と計算根拠</li>
+              <li>新潟滞在中の訪問相談のご案内</li>
+            </ul>
+          </div>
+          <form id="email-form" class="email-form">
+            <p class="form-intro">御社向けに調整するため、あと4項目だけ教えてください。</p>
+            <label for="company-name">会社名</label>
+            <input id="company-name" name="companyName" type="text" autocomplete="organization" placeholder="株式会社〇〇" maxlength="120" required>
+            <label for="role">あなたの立場</label>
+            <select id="role" name="role" required>
+              <option value="">選択してください</option>
+              <option value="owner">経営者・役員</option>
+              <option value="manager">管理職</option>
+              <option value="field">現場責任者</option>
+              <option value="admin">事務・管理担当</option>
+              <option value="sales">営業担当</option>
+              <option value="other">その他</option>
+            </select>
+            <fieldset class="challenge-fieldset">
+              <legend>現在の課題 <small>2つまで</small></legend>
+              <div class="challenge-grid">
+                <button type="button" data-challenge="afterwork" aria-pressed="false">帰社後の事務作業</button>
+                <button type="button" data-challenge="mixed" aria-pressed="false">紙・FAX・Excelの混在</button>
+                <button type="button" data-challenge="personal" aria-pressed="false">情報の属人化</button>
+                <button type="button" data-challenge="duplicate" aria-pressed="false">何度も同じ内容を入力</button>
+                <button type="button" data-challenge="documents" aria-pressed="false">見積・書類作成</button>
+                <button type="button" data-challenge="inquiries" aria-pressed="false">問い合わせ対応</button>
+                <button type="button" data-challenge="ai" aria-pressed="false">AIの始め方が不明</button>
+                <button type="button" data-challenge="handover" aria-pressed="false">人手不足・引き継ぎ</button>
+              </div>
+              <span id="challenge-error" class="field-error" role="alert"></span>
+            </fieldset>
+            <label for="email">メールアドレス</label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="name@example.jp" required>
+            <details class="detail-field"><summary>具体的な状況を追加する（任意）</summary><label for="detail">改善したい仕事</label><textarea id="detail" name="detail" maxlength="500" rows="3" placeholder="例：現場から戻った後の日報作成を減らしたい"></textarea></details>
+            <div class="website-field" aria-hidden="true"><label for="company-website">会社ウェブサイト</label><input id="company-website" name="companyWebsite" type="text" tabindex="-1" autocomplete="off"></div>
+            <label class="consent"><input id="privacy-accepted" type="checkbox" required> <span><a href="/privacy.html" target="_blank">プライバシーポリシー</a>に同意してレポートを受け取る</span></label>
+            <button class="button button-primary button-full" type="submit">改善アイデア3つを受け取る <span>→</span></button>
+            <p class="form-note">営業電話はありません。入力情報はレポート送付と、ご希望の相談対応にのみ使用します。</p>
+            <p id="form-message" class="form-message" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="stay-section" aria-labelledby="stay-heading">
+      <div>
+        <p class="eyebrow">期間限定の県内サポート</p>
+        <h2 id="stay-heading"><span data-config="supportDeadline">2027年1月31日</span>まで、<br>新潟県内で直接お話しできます</h2>
+      </div>
+      <div class="stay-copy">
+        <p>チェックだけで終わらず、実際の見積書、日報、請求業務などを見ながら、最初に改善する1業務を一緒に整理します。</p>
+        <p>訪問またはオンラインで対応します。無理にシステム導入を勧めることはありません。</p>
+        <a class="button button-light booking-link" href="#diagnosis">まず60秒チェックから始める <span>→</span></a>
+      </div>
+    </section>
+
+    <section class="process" aria-labelledby="process-heading">
+      <div class="section-heading"><p class="eyebrow">相談までの流れ</p><h2 id="process-heading">数字と改善可能性を見てから、相談するか決められます</h2></div>
+      <ol>
+        <li><span>01</span><strong>60秒チェック</strong><p>手作業の時間とコストを、その場で確認します。</p></li>
+        <li><span>02</span><strong>可能性レポート</strong><p>改善アイデア3つと最初の一手をメールで受け取ります。</p></li>
+        <li><span>03</span><strong>15分相談</strong><p>必要な場合だけ、訪問またはオンラインで整理します。</p></li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="#top"><span class="brand-mark">新</span><span>にいがた仕事改善室<small>現場はそのまま。事務を、ひとつ軽く。</small></span></a>
+    <nav aria-label="フッターナビゲーション"><a href="/cases.html">事例・AI活用例</a>　<a href="/privacy.html">プライバシーポリシー</a></nav>
+    <small>© 2026 にいがた仕事改善室</small>
+  </footer>
+</body>
+</html>
