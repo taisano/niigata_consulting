@@ -19,7 +19,6 @@
 ```js
 window.SITE_CONFIG = {
   supportDeadline: "2027年1月31日",
-  bookingUrl: "https://予約ページのURL",
   operatorName: "運営者名または屋号",
   privacyContact: "contact@example.jp"
 };
@@ -79,7 +78,7 @@ VercelでGitリポジトリをImportし、Framework Presetは `Other` のまま�
 
 ## 公開前チェック
 
-- `site.config.js`の運営者名、連絡先、予約URLを入力
+- `site.config.js`の運営者名と連絡先を確認
 - プライバシーポリシーの内容を運用実態に合わせて確認
 - Resendの送信元ドメインを認証
 - Vercelに環境変数を設定

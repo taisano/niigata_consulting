@@ -8,15 +8,6 @@ document.querySelectorAll('[data-config="supportDeadline"]').forEach((element) =
   if (config.supportDeadline) element.textContent = config.supportDeadline;
 });
 
-document.querySelectorAll(".booking-link").forEach((link) => {
-  if (config.bookingUrl) {
-    link.href = config.bookingUrl;
-    link.target = "_blank";
-    link.rel = "noopener";
-    link.firstChild.textContent = "15分相談を予約する ";
-  }
-});
-
 document.querySelectorAll("[data-field]").forEach((button) => {
   button.addEventListener("click", () => {
     const field = button.dataset.field;

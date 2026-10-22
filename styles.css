@@ -130,6 +130,7 @@ input[type="range"]{width:100%;margin-top:13px;accent-color:var(--accent)}
 .support-facts div{display:grid;grid-template-columns:150px 1fr;gap:18px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.16)}
 .support-facts dt{color:rgba(255,255,255,.6);font-size:11px}.support-facts dd{margin:0;font-size:13px;font-weight:700}
 .support-actions{display:flex;align-items:center;gap:18px;flex-wrap:wrap}.support-email{color:rgba(255,255,255,.72);font-size:11px}
+.stay-copy .mailto-note{margin:10px 0 0;color:rgba(255,255,255,.54);font-size:10px}
 .operator-section{max-width:var(--max);margin:auto;padding:82px 28px;display:grid;grid-template-columns:.8fr 1.2fr;gap:80px;align-items:start}
 .operator-section h2{margin:0;font-size:clamp(30px,4vw,48px);line-height:1.3}.operator-section>div:last-child p{margin:0 0 18px;color:var(--muted);font-size:14px}.operator-section a{font-size:12px;font-weight:700}
 .process ol{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin:0;padding:0;background:var(--line);list-style:none}
