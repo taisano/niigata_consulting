@@ -11,6 +11,30 @@ if (cases.length) {
     const article = document.createElement("article");
     article.className = "case-card";
     if (index === 0) article.classList.add("is-featured");
+    if (Array.isArray(item.images) && item.images.length) {
+      const gallery = document.createElement("div");
+      gallery.className = "case-gallery";
+      gallery.setAttribute("aria-label", `${escapeText(item.title)}の構想イメージ`);
+      item.images.forEach((asset) => {
+        const figure = document.createElement("figure");
+        const link = document.createElement("a");
+        link.href = asset.src;
+        link.target = "_blank";
+        link.rel = "noopener";
+        link.setAttribute("aria-label", `${escapeText(asset.caption)}を拡大表示`);
+        const image = document.createElement("img");
+        image.src = asset.src;
+        image.alt = escapeText(asset.alt);
+        image.loading = "lazy";
+        image.decoding = "async";
+        const caption = document.createElement("figcaption");
+        caption.textContent = escapeText(asset.caption);
+        link.append(image);
+        figure.append(link, caption);
+        gallery.append(figure);
+      });
+      article.append(gallery);
+    }
     if (item.image) {
       const figure = document.createElement("figure");
       figure.className = "case-image";

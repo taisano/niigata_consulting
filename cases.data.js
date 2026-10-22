@@ -7,6 +7,23 @@ window.CASE_STUDIES = [
     action: "事業構想とブランドづくりをプロデュース",
     result: "国土交通省 令和8年度『地域価値共創モデル事業』に採択",
     note: "新潟県新発田市／公開資料あり",
+    images: [
+      {
+        src: "/assets/harenohi-market-interior-concept.jpeg",
+        alt: "木造空間に青果売場とカフェを配置したハレノヒ・マーケットの構想イメージ",
+        caption: "売場・交流空間の構想イメージ"
+      },
+      {
+        src: "/assets/harenohi-market-zoning-concept.jpeg",
+        alt: "ハレノヒ・マーケットのゾーニング提案と内観の構想イメージ",
+        caption: "ゾーニング提案"
+      },
+      {
+        src: "/assets/harenohi-market-architecture-concept.jpeg",
+        alt: "ハレノヒ・マーケットの建築外観と市場空間の構想イメージ",
+        caption: "建築・外構の構想イメージ"
+      }
+    ],
     link: "https://www.mlit.go.jp/tochi_fudousan_kensetsugyo/const/content/002011889.pdf",
     linkLabel: "国土交通省の採択資料を見る"
   },
