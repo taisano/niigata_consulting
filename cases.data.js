@@ -1,6 +1,8 @@
 window.CASE_STUDIES = [
   {
     published: true,
+    featured: true,
+    slug: "harenohi-market",
     industry: "地域開発・不動産",
     title: "新発田ハレノヒ・マーケット",
     challenge: "中心市街地の低未利用地を、地域の日常に根差した交流拠点へ",
@@ -26,6 +28,30 @@ window.CASE_STUDIES = [
     ],
     link: "https://www.mlit.go.jp/tochi_fudousan_kensetsugyo/const/content/002011889.pdf",
     linkLabel: "国土交通省の採択資料を見る"
+  },
+  {
+    published: true,
+    featured: true,
+    slug: "tenant-trend-database",
+    industry: "不動産・データ活用",
+    client: "新潟県内の不動産会社",
+    title: "公開データを活用したテナント誘致の高速化",
+    challenge: "誘致候補となる業態のトレンドを、社員が個別に手作業で調査。候補選定から契約まで半年近くかかっていた",
+    action: "複数の外部公開データを組み合わせてデータベース化し、次に可能性のある業態と潜在顧客を特定",
+    result: "潜在顧客へのアプローチを早め、契約までのプロセスを約6か月から約2か月へ短縮",
+    note: "守秘義務のため社名非公開",
+    images: [
+      {
+        src: "/assets/niigata-tenant-trend-by-category.webp",
+        alt: "新潟県内における業態別の開店数と閉店数を比較した横棒グラフ",
+        caption: "業態別の開閉店動向"
+      },
+      {
+        src: "/assets/niigata-tenant-trend-timeline.webp",
+        alt: "新潟県内における開店数と閉店数の月別推移を示した折れ線グラフ",
+        caption: "開閉店数の月別推移"
+      }
+    ]
   },
   {
     published: true,

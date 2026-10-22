@@ -10,11 +10,12 @@ if (cases.length) {
   cases.forEach((item, index) => {
     const article = document.createElement("article");
     article.className = "case-card";
-    if (index === 0) article.classList.add("is-featured");
+    if (item.slug) article.id = item.slug;
+    if (item.featured || index === 0) article.classList.add("is-featured");
     if (Array.isArray(item.images) && item.images.length) {
       const gallery = document.createElement("div");
       gallery.className = "case-gallery";
-      gallery.setAttribute("aria-label", `${escapeText(item.title)}の構想イメージ`);
+      gallery.setAttribute("aria-label", `${escapeText(item.title)}の関連画像`);
       item.images.forEach((asset) => {
         const figure = document.createElement("figure");
         const link = document.createElement("a");
@@ -52,6 +53,11 @@ if (cases.length) {
     const industry = document.createElement("span");
     industry.className = "case-industry";
     industry.textContent = escapeText(item.industry);
+    const client = item.client ? document.createElement("p") : null;
+    if (client) {
+      client.className = "case-client";
+      client.textContent = `クライアント：${escapeText(item.client)}`;
+    }
     const title = document.createElement("h3");
     title.textContent = escapeText(item.title);
     const list = document.createElement("dl");
@@ -66,7 +72,9 @@ if (cases.length) {
     });
     const note = document.createElement("small");
     note.textContent = escapeText(item.note);
-    article.append(industry, title, list, note);
+    article.append(industry);
+    if (client) article.append(client);
+    article.append(title, list, note);
     if (item.link) {
       const link = document.createElement("a");
       link.className = "case-link";
